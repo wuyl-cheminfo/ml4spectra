@@ -60,32 +60,32 @@ save_predictions(predictions, 'dataset/absorption_fps.xlsx', 'results/prediction
 ## Methodology
 1. Molecular Representation
 
-MACCS Keys: 166-bit structural keys
-Morgan Fingerprints: 1024-bit circular fingerprints (radius=2)
-RDKit Fingerprints: 1024-bit topological fingerprints
-Solvent Descriptors: Et(30), SP, SdP, SA, SB parameters
+- MACCS Keys: 166-bit structural keys
+- Morgan Fingerprints: 1024-bit circular fingerprints (radius=2)
+- RDKit Fingerprints: 1024-bit topological fingerprints
+- Solvent Descriptors: Et(30), SP, SdP, SA, SB parameters
 
 2. Feature Selection Pipeline
 
-Variance Threshold: Remove low-variance features (threshold=0.01)
-Pearson Correlation: Filter by correlation with target (threshold=0.15)
-Mutual Information: Select informative features (threshold=0.01)
-Recursive Feature Elimination: Optimal feature subset selection
+- Variance Threshold: Remove low-variance features (threshold=0.01)
+- Pearson Correlation: Filter by correlation with target (threshold=0.15)
+- Mutual Information: Select informative features (threshold=0.01)
+- Recursive Feature Elimination: Optimal feature subset selection
 
 3. Machine Learning Models
 
-K-Nearest Neighbors (KNN)
-Kernel Ridge Regression (KRR)
-Support Vector Regression (SVR)
-Random Forest (RF)
-XGBoost (XGB)
-LightGBM (LGB)
+- K-Nearest Neighbors (KNN)
+- Kernel Ridge Regression (KRR)
+- Support Vector Regression (SVR)
+- Random Forest (RF)
+- XGBoost (XGB)
+- LightGBM (LGB)
 
 4. Model Evaluation
 
-10-fold Stratified Cross Validation
-Metrics: R², RMSE, MAE
-Automatic Hyperparameter Tuning
+- 10-fold Stratified Cross Validation
+- Metrics: R², RMSE, MAE
+- Automatic Hyperparameter Tuning
 
 
 ## Data Format
@@ -98,6 +98,7 @@ Output Prediction Format
 ID,SMILES,SOLVENT,Predicted_ABS
 1,CCCC[N+]1=...,MeCN,745.2
 2,CCCC[N+]1=...,MeCN,812.8
+
 
 
 
