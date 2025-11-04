@@ -88,16 +88,6 @@ save_predictions(predictions, 'dataset/absorption_fps.xlsx', 'results/prediction
 - Automatic Hyperparameter Tuning
 
 
-## Data Format
-Input Data Format
-ID,SMILES,SOLVENT,Et(30),SP,SdP,SA,SB,ABS
-1,CCCC[N+]1=...,MeCN,45.6,0.645,0.974,0.044,0.286,758
-2,CCCC[N+]1=...,MeCN,45.6,0.645,0.974,0.044,0.286,817
-
-Output Prediction Format
-ID,SMILES,SOLVENT,Predicted_ABS
-1,CCCC[N+]1=...,MeCN,745.2
-2,CCCC[N+]1=...,MeCN,812.8
 
 
 
