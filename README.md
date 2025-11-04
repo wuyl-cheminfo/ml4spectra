@@ -22,6 +22,7 @@ feature_df = featurizer.create_feature_dataframe(
     target_data=df, 
     target_type='ABS'
 )
+```markdown
 
 2. Feature Selection
 
@@ -30,6 +31,7 @@ from src.feature_selection import run_feature_selection_pipeline
 
 # Run complete feature selection pipeline
 run_feature_selection_pipeline('data/processed/absorption_features.xlsx', 'ABS')
+```markdown
 
 3. Model Training
 
@@ -43,6 +45,7 @@ results = trainer.train_and_evaluate_all_models(
     'ABS', 
     n_splits=10
 )
+```markdown
 
 4. Make Predictions
 
@@ -52,7 +55,7 @@ from src.predict import predict_absorption, save_predictions
 # Simple prediction
 predictions = predict_absorption('dataset/absorption_fps.xlsx')
 save_predictions(predictions, 'dataset/absorption_fps.xlsx', 'results/predictions.xlsx')
-
+```markdown
 
 ## Methodology
 1. Molecular Representation
@@ -95,6 +98,7 @@ Output Prediction Format
 ID,SMILES,SOLVENT,Predicted_ABS
 1,CCCC[N+]1=...,MeCN,745.2
 2,CCCC[N+]1=...,MeCN,812.8
+
 
 
 
